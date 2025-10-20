@@ -1,11 +1,10 @@
 package airlines;
 
+import static org.junit.jupiter.api.Assertions.*;
+
 import java.nio.file.Path;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertFalse;
-import static org.junit.jupiter.api.Assertions.assertTrue;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.io.TempDir;
@@ -46,7 +45,7 @@ public class FlightPersistenceTest {
 
         int afterOnce = sizeSafe(db.getFlights());
 
-        // same ID, different number—should be rejected (service checks duplicate flightId)
+        // same ID, different number—should be rejected (your service checks duplicate flightId)
         boolean second = db.addFlight("T200", "NU201", 4, 4, new char[]{'A','B','C','D'});
         assertFalse(second, "Duplicate flightId should be rejected (addFlight returns false)");
 
@@ -55,6 +54,7 @@ public class FlightPersistenceTest {
         assertEquals(before + 1, afterTwice, "Exactly one new flight should exist");
     }
 
+    // ---- helper ----
     private static int sizeSafe(List<?> list) {
         return (list == null) ? 0 : list.size();
     }
