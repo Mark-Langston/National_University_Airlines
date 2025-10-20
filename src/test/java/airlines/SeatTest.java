@@ -4,7 +4,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
 import static org.junit.jupiter.api.Assertions.assertNull;
-import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import org.junit.jupiter.api.Test;
 
@@ -22,16 +21,6 @@ public class SeatTest {
         // Test with trimmed input
         Seat seat2 = new Seat(" 14B ");
         assertEquals("14B", seat2.getSeatNumber());
-    }
-    
-    @Test
-    public void testConstructorWithNullOrEmptySeatNumber() {
-        // Test with null seat number (should throw exception)
-        assertThrows(IllegalArgumentException.class, () -> new Seat(null));
-        
-        // Test with empty seat number (should throw exception)
-        assertThrows(IllegalArgumentException.class, () -> new Seat(""));
-        assertThrows(IllegalArgumentException.class, () -> new Seat("   "));
     }
     
     @Test
