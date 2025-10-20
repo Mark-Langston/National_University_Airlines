@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="airlines.FlightPersistenceTest" time="0.008" tests="2" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="airlines.FileStorageTest" time="0.017" tests="6" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="25"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -60,19 +60,34 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="69.0"/>
   </properties>
-  <testcase name="addFlight_duplicateId_isRejectedAndSizeUnchanged" classname="airlines.FlightPersistenceTest" time="0.004">
-    <system-out><![CDATA[[FileStorage] C:\Users\mark_\AppData\Local\Temp\junit4517324377843733274\database.txt not found. Creating default database...
-[FileStorage] Saved 2 flights to C:\Users\mark_\AppData\Local\Temp\junit4517324377843733274\database.txt
-[FileStorage] Loaded 2 flights from C:\Users\mark_\AppData\Local\Temp\junit4517324377843733274\database.txt
-[FileStorage] Saved 3 flights to C:\Users\mark_\AppData\Local\Temp\junit4517324377843733274\database.txt
-[DatabaseService] addFlight: duplicate flightId T200
+  <testcase name="testReadNonExistentFile" classname="airlines.FileStorageTest" time="0.003">
+    <system-out><![CDATA[[FileStorage] C:\Users\mark_\AppData\Local\Temp\junit11613074011852830577\nonexistent.txt not found. Creating default database...
+[FileStorage] Saved 2 flights to C:\Users\mark_\AppData\Local\Temp\junit11613074011852830577\nonexistent.txt
 ]]></system-out>
   </testcase>
-  <testcase name="addFlight_uniqueId_increasesCount" classname="airlines.FlightPersistenceTest" time="0.004">
-    <system-out><![CDATA[[FileStorage] C:\Users\mark_\AppData\Local\Temp\junit8360072438801808002\database.txt not found. Creating default database...
-[FileStorage] Saved 2 flights to C:\Users\mark_\AppData\Local\Temp\junit8360072438801808002\database.txt
-[FileStorage] Loaded 2 flights from C:\Users\mark_\AppData\Local\Temp\junit8360072438801808002\database.txt
-[FileStorage] Saved 3 flights to C:\Users\mark_\AppData\Local\Temp\junit8360072438801808002\database.txt
+  <testcase name="testReadEmptyFile" classname="airlines.FileStorageTest" time="0.002">
+    <system-out><![CDATA[[FileStorage] File empty or invalid. Rebuilding with defaults.
+[FileStorage] Saved 2 flights to C:\Users\mark_\AppData\Local\Temp\junit7420204262498372471\empty.txt
+]]></system-out>
+  </testcase>
+  <testcase name="testWrite" classname="airlines.FileStorageTest" time="0.003">
+    <system-out><![CDATA[[FileStorage] Saved 2 flights to C:\Users\mark_\AppData\Local\Temp\junit6466631910431865359\output.txt
+]]></system-out>
+  </testcase>
+  <testcase name="testDefaultFlights" classname="airlines.FileStorageTest" time="0.002">
+    <system-out><![CDATA[[FileStorage] C:\Users\mark_\AppData\Local\Temp\junit3160963244640786595\defaults.txt not found. Creating default database...
+[FileStorage] Saved 2 flights to C:\Users\mark_\AppData\Local\Temp\junit3160963244640786595\defaults.txt
+]]></system-out>
+  </testcase>
+  <testcase name="testReadMalformedFile" classname="airlines.FileStorageTest" time="0.002">
+    <system-out><![CDATA[[FileStorage] Skipping malformed row (wrong column count): F100,NU777
+[FileStorage] Skipping malformed row (wrong column count): invalidline
+[FileStorage] Skipping malformed row (invalid status): F200,NU888,10C,INVALID_STATUS,,,
+[FileStorage] Loaded 1 flights from C:\Users\mark_\AppData\Local\Temp\junit11744026600138249129\malformed.txt
+]]></system-out>
+  </testcase>
+  <testcase name="testReadExistingValidFile" classname="airlines.FileStorageTest" time="0.003">
+    <system-out><![CDATA[[FileStorage] Loaded 2 flights from C:\Users\mark_\AppData\Local\Temp\junit7471935497531111676\testdata.txt
 ]]></system-out>
   </testcase>
 </testsuite>

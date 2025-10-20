@@ -1,1 +1,8 @@
+airlines\ValidationUtilsTest.class
+airlines\AllTestsSuite.class
+airlines\FlightTest.class
+airlines\SeatTest.class
 airlines\FlightPersistenceTest.class
+airlines\PassengerTest.class
+airlines\DatabaseServiceTest.class
+airlines\FileStorageTest.class

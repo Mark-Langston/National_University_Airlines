@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="airlines.FlightPersistenceTest" time="0.008" tests="2" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="airlines.PassengerTest" time="0.003" tests="6" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="25"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -60,19 +60,10 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="69.0"/>
   </properties>
-  <testcase name="addFlight_duplicateId_isRejectedAndSizeUnchanged" classname="airlines.FlightPersistenceTest" time="0.004">
-    <system-out><![CDATA[[FileStorage] C:\Users\mark_\AppData\Local\Temp\junit4517324377843733274\database.txt not found. Creating default database...
-[FileStorage] Saved 2 flights to C:\Users\mark_\AppData\Local\Temp\junit4517324377843733274\database.txt
-[FileStorage] Loaded 2 flights from C:\Users\mark_\AppData\Local\Temp\junit4517324377843733274\database.txt
-[FileStorage] Saved 3 flights to C:\Users\mark_\AppData\Local\Temp\junit4517324377843733274\database.txt
-[DatabaseService] addFlight: duplicate flightId T200
-]]></system-out>
-  </testcase>
-  <testcase name="addFlight_uniqueId_increasesCount" classname="airlines.FlightPersistenceTest" time="0.004">
-    <system-out><![CDATA[[FileStorage] C:\Users\mark_\AppData\Local\Temp\junit8360072438801808002\database.txt not found. Creating default database...
-[FileStorage] Saved 2 flights to C:\Users\mark_\AppData\Local\Temp\junit8360072438801808002\database.txt
-[FileStorage] Loaded 2 flights from C:\Users\mark_\AppData\Local\Temp\junit8360072438801808002\database.txt
-[FileStorage] Saved 3 flights to C:\Users\mark_\AppData\Local\Temp\junit8360072438801808002\database.txt
-]]></system-out>
-  </testcase>
+  <testcase name="testGetFullName" classname="airlines.PassengerTest" time="0.001"/>
+  <testcase name="testToString" classname="airlines.PassengerTest" time="0.0"/>
+  <testcase name="testHashCode" classname="airlines.PassengerTest" time="0.001"/>
+  <testcase name="testEquals" classname="airlines.PassengerTest" time="0.0"/>
+  <testcase name="testSetters" classname="airlines.PassengerTest" time="0.0"/>
+  <testcase name="testConstructor" classname="airlines.PassengerTest" time="0.0"/>
 </testsuite>

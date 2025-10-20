@@ -1,4 +1,5 @@
 package airlines;
+
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
@@ -36,36 +37,50 @@ public final class FileStorage {
 
         // 2️⃣ Otherwise, load from file
         Map<String, Flight> flightsById = new LinkedHashMap<>();
+
         try {
             List<String> lines = Files.readAllLines(p, StandardCharsets.UTF_8);
+
             for (String raw : lines) {
+                // Skip blank or comment lines
                 if (raw == null || raw.isBlank() || raw.startsWith("#")) continue;
 
-                String[] cols = raw.split(",", -1);
-                if (cols.length < 7) {
-                    System.out.println("[FileStorage] Skipping malformed row: " + raw);
+                String[] cols = raw.split(",", -1); // keep empty fields
+                if (cols.length != 7) {
+                    System.out.println("[FileStorage] Skipping malformed row (wrong column count): " + raw);
                     continue;
                 }
 
-                String flightId = cols[0].trim();
+                String flightId     = cols[0].trim();
                 String flightNumber = cols[1].trim();
-                String seatNumber = cols[2].trim();
-                String statusStr = cols[3].trim().toUpperCase(Locale.ROOT);
-                String firstName = cols[4].trim();
-                String lastName = cols[5].trim();
-                String dob = cols[6].trim();
+                String seatNumber   = cols[2].trim();
+                String statusStr    = cols[3].trim().toUpperCase(Locale.ROOT);
+                String firstName    = cols[4].trim();
+                String lastName     = cols[5].trim();
+                String dob          = cols[6].trim();
 
-                if (flightId.isEmpty() || flightNumber.isEmpty() || seatNumber.isEmpty()) continue;
+                // Basic field validation
+                if (flightId.isEmpty() || flightNumber.isEmpty() || seatNumber.isEmpty()) {
+                    System.out.println("[FileStorage] Skipping malformed row (missing required fields): " + raw);
+                    continue;
+                }
+
+                // ✅ Strict status validation — only AVAILABLE or BOOKED allowed
+                if (!"AVAILABLE".equals(statusStr) && !"BOOKED".equals(statusStr)) {
+                    System.out.println("[FileStorage] Skipping malformed row (invalid status): " + raw);
+                    continue;
+                }
 
                 Flight flight = flightsById.computeIfAbsent(flightId, id -> new Flight(id, flightNumber));
 
                 Seat seat;
-                if (statusStr.equals("BOOKED")) {
+                if ("BOOKED".equals(statusStr)) {
                     Passenger passenger = new Passenger(firstName, lastName, dob);
                     seat = new Seat(seatNumber, passenger);
                 } else {
                     seat = new Seat(seatNumber);
                 }
+
                 flight.addSeat(seat);
             }
         } catch (IOException e) {
@@ -73,6 +88,7 @@ public final class FileStorage {
             return defaultFlights();
         }
 
+        // If empty or invalid, rebuild defaults
         if (flightsById.isEmpty()) {
             System.out.println("[FileStorage] File empty or invalid. Rebuilding with defaults.");
             List<Flight> defaults = defaultFlights();
@@ -106,6 +122,7 @@ public final class FileStorage {
             }
         }
 
+        // Always write UTF-8
         Files.write(Path.of(path), lines, StandardCharsets.UTF_8);
         System.out.println("[FileStorage] Saved " + flights.size() + " flights to " + path);
     }
@@ -115,10 +132,10 @@ public final class FileStorage {
         List<Flight> flights = new ArrayList<>();
 
         Flight f1 = new Flight("F001", "NU100");
-        addSeats(f1, 1, 5, new char[]{'A','B','C','D','E','F'});
+        addSeats(f1, 1, 5, new char[]{'A', 'B', 'C', 'D', 'E', 'F'});
 
         Flight f2 = new Flight("F002", "NU245");
-        addSeats(f2, 1, 4, new char[]{'A','B','C','D'});
+        addSeats(f2, 1, 4, new char[]{'A', 'B', 'C', 'D'});
 
         flights.add(f1);
         flights.add(f2);
