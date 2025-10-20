@@ -10,7 +10,6 @@ public class National_University_Airlines {
         try {
             UIManager.setLookAndFeel("javax.swing.plaf.nimbus.NimbusLookAndFeel");
         } catch (UnsupportedLookAndFeelException | ReflectiveOperationException ignored) {
-            // Fallback is fine; keep quiet or log if you like
         }
 
         SwingUtilities.invokeLater(() -> {
