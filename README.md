@@ -27,6 +27,16 @@ Unlike commercial scheduling systems, this app is **free**, **offline**, and doe
 
 ---
 
+## 🎥 App Demo
+
+Watch a demo of the **National University Airlines** application here:
+
+[![App Demo Video](https://img.youtube.com/vi/ukya4rRWxyA/0.jpg)](https://www.youtube.com/watch?v=ukya4rRWxyA)
+
+> 🎬 *Click the image above to watch the demo on YouTube.*
+
+---
+
 ## 👥 Team 2 – CSC449 Software Engineering
 Developed collaboratively as part of a group assignment to demonstrate modular design, version control, and sprint-based development.
 
@@ -36,24 +46,24 @@ Developed collaboratively as part of a group assignment to demonstrate modular d
 | Issue | Description | Status |
 |--------|--------------|---------|
 | #1 | App entry point | ✅ Done |
-| #2 | Flight model | 👤 In Review |
-| #3 | Seat & Passenger models | 👤 In Review |
-| #4 | File storage (read CSV / autoload) | 👤 In Review |
-| #5 | File storage (write CSV / autosave) | 👤 In Review |
-| #6 | DatabaseService (backend controller) | 👤 In Review |
-| #7 | HomeFrame UI (flight listing screen) | 👤 In Review |
-| #8 | SeatsFrame | 👤 In Review |
-| #9 | SeatEditorDialog | 👤 In Review |
-| #10 | Autoload on app launch | 👤 In Review |
-| #11 | Validation | 👤 In Review |
-| #12 | Menu: File -> Exit | 👤 In Review |
+| #2 | Flight model | ✅ Done |
+| #3 | Seat & Passenger models | ✅ Done |
+| #4 | File storage (read CSV / autoload) | ✅ Done |
+| #5 | File storage (write CSV / autosave) | ✅ Done |
+| #6 | DatabaseService (backend controller) | ✅ Done |
+| #7 | HomeFrame UI (flight listing screen) | ✅ Done |
+| #8 | SeatsFrame | ✅ Done |
+| #9 | SeatEditorDialog | ✅ Done |
+| #10 | Autoload on app launch | ✅ Done |
+| #11 | Validation | ✅ Done |
+| #12 | Menu: File -> Exit | ✅ Done |
 | #13 | Sample database.txt in repo | 🚧 Cancelled |
-| #14 | AddFlightDialog | 👤 In Review |
-| #15 | Delete Flight | 👤 In Review |
-| #16 | DatabaseService: add/delete APIs + seat generation | 👤 In Review |
-| #17 | Validation Rules for Flight Creation | 👤 In Review |
-| #18 | HomFrame: Integrate "Add Flight" and "Delete Flight" | 👤 In Review |
-| #19 | FileStorage Compatibility Check | 🚧 Backlog |
+| #14 | AddFlightDialog | ✅ Done |
+| #15 | Delete Flight | ✅ Done |
+| #16 | DatabaseService: add/delete APIs + seat generation | ✅ Done |
+| #17 | Validation Rules for Flight Creation | ✅ Done |
+| #18 | HomFrame: Integrate "Add Flight" and "Delete Flight" | ✅ Done |
+| #19 | FileStorage Compatibility Check | ✅ Done |
 | #20 | README & Screenshots Update | 🚧 Backlog | 
 
 ---
