@@ -21,9 +21,44 @@ Unlike commercial scheduling systems, this app is **free**, **offline**, and doe
 *Shows seats for a selected flight, with seat status and passenger info.*
 
 ### 👤 Seat Editor
-![Seat Editor Dialog](screenshots/screenshot3.png)
+![Seat Editor Dialog](screenshots/SeatEditor.png)
 
-*Allows editing of passenger details with validation and autosave.*
+*Allows input or cancellation of a passengers reservation.*
+
+### 👤 Seat Allocation
+![Seat Allocation Dialog](screenshots/SeatEditor.png)
+
+*Shows Availaable and Booked seats withing a given flight.*
+
+### 👤 Pax Error Validation
+![Pax Error Validation](screenshots/PaxErrorValidation.png)
+
+*Displays validation warning when someone inputs incorrect DOB data.*
+
+### 👤 Flight Directory
+![Flight Directory](screenshots/FlightDirectory.png)
+
+*Displays available flights to be scheduled.*
+
+### 👤 Flight Allocation
+![Flight Allocation Dialog](screenshots/FlightAllocation.png)
+
+*Allows editing of flight details with validation and autosave.*
+
+### 👤 Flight Error Validation
+![Flight Error Validation](screenshots/FlightErrorValidation.png)
+
+*Displays validation warning for incorrect format of Flight Number.*
+
+### 👤 Flight Deletion
+![Flight Deletion Confirmation](screenshots/FlightDeletion.png)
+
+*Displays confirmation message when flight deletion is requested.*
+
+### 👤 File Menu
+![File Menu](screenshots/FileMenu.png)
+
+*Allows alternative and user friendly method of closing application.*
 
 ---
 
