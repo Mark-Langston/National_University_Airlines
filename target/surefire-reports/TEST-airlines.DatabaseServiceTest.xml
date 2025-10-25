@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="airlines.DatabaseServiceTest" time="0.116" tests="16" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="airlines.DatabaseServiceTest" time="0.136" tests="16" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="25"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-25.0.0.36-hotspot\bin"/>
-    <property name="sun.java.command" value="C:\Users\mark_\AppData\Local\Temp\surefire11729501062683092562\surefirebooter-20251019182012398_3.jar C:\Users\mark_\AppData\Local\Temp\surefire11729501062683092562 2025-10-19T18-20-12_310-jvmRun1 surefire-20251019182012398_1tmp surefire_0-20251019182012398_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\mark_\AppData\Local\Temp\surefire7764231700439311967\surefirebooter-20251025165105796_3.jar C:\Users\mark_\AppData\Local\Temp\surefire7764231700439311967 2025-10-25T16-51-05_690-jvmRun1 surefire-20251025165105796_1tmp surefire_0-20251025165105796_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\mark_\OneDrive\Desktop\CSC449\National University Airlines\National_University_Airlines\target\test-classes;C:\Users\mark_\OneDrive\Desktop\CSC449\National University Airlines\National_University_Airlines\target\classes;C:\Users\mark_\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.2\junit-jupiter-5.10.2.jar;C:\Users\mark_\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\mark_\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\mark_\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\mark_\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\mark_\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.2\junit-jupiter-params-5.10.2.jar;C:\Users\mark_\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\mark_\.m2\repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;C:\Users\mark_\.m2\repository\org\mockito\mockito-core\5.12.0\mockito-core-5.12.0.jar;C:\Users\mark_\.m2\repository\net\bytebuddy\byte-buddy\1.14.15\byte-buddy-1.14.15.jar;C:\Users\mark_\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.15\byte-buddy-agent-1.14.15.jar;C:\Users\mark_\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\mark_\AppData\Local\Temp\surefire11729501062683092562\surefirebooter-20251019182012398_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\mark_\AppData\Local\Temp\surefire7764231700439311967\surefirebooter-20251025165105796_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="25+36-LTS"/>
@@ -60,91 +60,91 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="69.0"/>
   </properties>
-  <testcase name="getFlightsReturnsUnmodifiableList" classname="airlines.DatabaseServiceTest" time="0.043">
-    <system-out><![CDATA[[FileStorage] C:\Users\mark_\AppData\Local\Temp\junit6999033194999920535\test_database.txt not found. Creating default database...
-[FileStorage] Saved 2 flights to C:\Users\mark_\AppData\Local\Temp\junit6999033194999920535\test_database.txt
+  <testcase name="getFlightsReturnsUnmodifiableList" classname="airlines.DatabaseServiceTest" time="0.049">
+    <system-out><![CDATA[[FileStorage] C:\Users\mark_\AppData\Local\Temp\junit6263345635964015340\test_database.txt not found. Creating default database...
+[FileStorage] Saved 2 flights to C:\Users\mark_\AppData\Local\Temp\junit6263345635964015340\test_database.txt (v1)
 ]]></system-out>
   </testcase>
   <testcase name="saveAndLoadPreservesData" classname="airlines.DatabaseServiceTest" time="0.008">
-    <system-out><![CDATA[[FileStorage] C:\Users\mark_\AppData\Local\Temp\junit1198288867611193896\test_database.txt not found. Creating default database...
-[FileStorage] Saved 2 flights to C:\Users\mark_\AppData\Local\Temp\junit1198288867611193896\test_database.txt
-[FileStorage] Saved 3 flights to C:\Users\mark_\AppData\Local\Temp\junit1198288867611193896\test_database.txt
-[FileStorage] Saved 3 flights to C:\Users\mark_\AppData\Local\Temp\junit1198288867611193896\test_database.txt
-[FileStorage] Saved 3 flights to C:\Users\mark_\AppData\Local\Temp\junit1198288867611193896\test_database.txt
-[FileStorage] Loaded 3 flights from C:\Users\mark_\AppData\Local\Temp\junit1198288867611193896\test_database.txt
+    <system-out><![CDATA[[FileStorage] C:\Users\mark_\AppData\Local\Temp\junit2333087263065675131\test_database.txt not found. Creating default database...
+[FileStorage] Saved 2 flights to C:\Users\mark_\AppData\Local\Temp\junit2333087263065675131\test_database.txt (v1)
+[FileStorage] Saved 3 flights to C:\Users\mark_\AppData\Local\Temp\junit2333087263065675131\test_database.txt (v1)
+[FileStorage] Saved 3 flights to C:\Users\mark_\AppData\Local\Temp\junit2333087263065675131\test_database.txt (v1)
+[FileStorage] Saved 3 flights to C:\Users\mark_\AppData\Local\Temp\junit2333087263065675131\test_database.txt (v1)
+[FileStorage] Loaded 3 flights from C:\Users\mark_\AppData\Local\Temp\junit2333087263065675131\test_database.txt
 ]]></system-out>
   </testcase>
   <testcase name="getSeatsReturnsCorrectSeatsForFlight" classname="airlines.DatabaseServiceTest" time="0.003">
-    <system-out><![CDATA[[FileStorage] C:\Users\mark_\AppData\Local\Temp\junit1980150897253048522\test_database.txt not found. Creating default database...
-[FileStorage] Saved 2 flights to C:\Users\mark_\AppData\Local\Temp\junit1980150897253048522\test_database.txt
-[FileStorage] Saved 3 flights to C:\Users\mark_\AppData\Local\Temp\junit1980150897253048522\test_database.txt
+    <system-out><![CDATA[[FileStorage] C:\Users\mark_\AppData\Local\Temp\junit11158313057451930138\test_database.txt not found. Creating default database...
+[FileStorage] Saved 2 flights to C:\Users\mark_\AppData\Local\Temp\junit11158313057451930138\test_database.txt (v1)
+[FileStorage] Saved 3 flights to C:\Users\mark_\AppData\Local\Temp\junit11158313057451930138\test_database.txt (v1)
 ]]></system-out>
   </testcase>
-  <testcase name="bookSeatWrapper" classname="airlines.DatabaseServiceTest" time="0.003">
-    <system-out><![CDATA[[FileStorage] C:\Users\mark_\AppData\Local\Temp\junit3056451625069866851\test_database.txt not found. Creating default database...
-[FileStorage] Saved 2 flights to C:\Users\mark_\AppData\Local\Temp\junit3056451625069866851\test_database.txt
-[FileStorage] Saved 3 flights to C:\Users\mark_\AppData\Local\Temp\junit3056451625069866851\test_database.txt
-[FileStorage] Saved 3 flights to C:\Users\mark_\AppData\Local\Temp\junit3056451625069866851\test_database.txt
+  <testcase name="bookSeatWrapper" classname="airlines.DatabaseServiceTest" time="0.004">
+    <system-out><![CDATA[[FileStorage] C:\Users\mark_\AppData\Local\Temp\junit11946430551786421138\test_database.txt not found. Creating default database...
+[FileStorage] Saved 2 flights to C:\Users\mark_\AppData\Local\Temp\junit11946430551786421138\test_database.txt (v1)
+[FileStorage] Saved 3 flights to C:\Users\mark_\AppData\Local\Temp\junit11946430551786421138\test_database.txt (v1)
+[FileStorage] Saved 3 flights to C:\Users\mark_\AppData\Local\Temp\junit11946430551786421138\test_database.txt (v1)
 ]]></system-out>
   </testcase>
-  <testcase name="updateSeatReleasingPassenger" classname="airlines.DatabaseServiceTest" time="0.004">
-    <system-out><![CDATA[[FileStorage] C:\Users\mark_\AppData\Local\Temp\junit2350454132917574886\test_database.txt not found. Creating default database...
-[FileStorage] Saved 2 flights to C:\Users\mark_\AppData\Local\Temp\junit2350454132917574886\test_database.txt
-[FileStorage] Saved 3 flights to C:\Users\mark_\AppData\Local\Temp\junit2350454132917574886\test_database.txt
-[FileStorage] Saved 3 flights to C:\Users\mark_\AppData\Local\Temp\junit2350454132917574886\test_database.txt
-[FileStorage] Saved 3 flights to C:\Users\mark_\AppData\Local\Temp\junit2350454132917574886\test_database.txt
+  <testcase name="updateSeatReleasingPassenger" classname="airlines.DatabaseServiceTest" time="0.005">
+    <system-out><![CDATA[[FileStorage] C:\Users\mark_\AppData\Local\Temp\junit14460182371136640761\test_database.txt not found. Creating default database...
+[FileStorage] Saved 2 flights to C:\Users\mark_\AppData\Local\Temp\junit14460182371136640761\test_database.txt (v1)
+[FileStorage] Saved 3 flights to C:\Users\mark_\AppData\Local\Temp\junit14460182371136640761\test_database.txt (v1)
+[FileStorage] Saved 3 flights to C:\Users\mark_\AppData\Local\Temp\junit14460182371136640761\test_database.txt (v1)
+[FileStorage] Saved 3 flights to C:\Users\mark_\AppData\Local\Temp\junit14460182371136640761\test_database.txt (v1)
 ]]></system-out>
   </testcase>
-  <testcase name="updateSeatBookingPassenger" classname="airlines.DatabaseServiceTest" time="0.004">
-    <system-out><![CDATA[[FileStorage] C:\Users\mark_\AppData\Local\Temp\junit1239761127444298822\test_database.txt not found. Creating default database...
-[FileStorage] Saved 2 flights to C:\Users\mark_\AppData\Local\Temp\junit1239761127444298822\test_database.txt
-[FileStorage] Saved 3 flights to C:\Users\mark_\AppData\Local\Temp\junit1239761127444298822\test_database.txt
-[FileStorage] Saved 3 flights to C:\Users\mark_\AppData\Local\Temp\junit1239761127444298822\test_database.txt
+  <testcase name="updateSeatBookingPassenger" classname="airlines.DatabaseServiceTest" time="0.005">
+    <system-out><![CDATA[[FileStorage] C:\Users\mark_\AppData\Local\Temp\junit16773435243710397089\test_database.txt not found. Creating default database...
+[FileStorage] Saved 2 flights to C:\Users\mark_\AppData\Local\Temp\junit16773435243710397089\test_database.txt (v1)
+[FileStorage] Saved 3 flights to C:\Users\mark_\AppData\Local\Temp\junit16773435243710397089\test_database.txt (v1)
+[FileStorage] Saved 3 flights to C:\Users\mark_\AppData\Local\Temp\junit16773435243710397089\test_database.txt (v1)
 ]]></system-out>
   </testcase>
   <testcase name="getSeatsForNonexistentFlightReturnsEmptyList" classname="airlines.DatabaseServiceTest" time="0.003">
-    <system-out><![CDATA[[FileStorage] C:\Users\mark_\AppData\Local\Temp\junit4872775315796794535\test_database.txt not found. Creating default database...
-[FileStorage] Saved 2 flights to C:\Users\mark_\AppData\Local\Temp\junit4872775315796794535\test_database.txt
+    <system-out><![CDATA[[FileStorage] C:\Users\mark_\AppData\Local\Temp\junit9021227998664955999\test_database.txt not found. Creating default database...
+[FileStorage] Saved 2 flights to C:\Users\mark_\AppData\Local\Temp\junit9021227998664955999\test_database.txt (v1)
 ]]></system-out>
   </testcase>
   <testcase name="getSeatsForNullFlightIdReturnsEmptyList" classname="airlines.DatabaseServiceTest" time="0.003">
-    <system-out><![CDATA[[FileStorage] C:\Users\mark_\AppData\Local\Temp\junit13255554720285369929\test_database.txt not found. Creating default database...
-[FileStorage] Saved 2 flights to C:\Users\mark_\AppData\Local\Temp\junit13255554720285369929\test_database.txt
+    <system-out><![CDATA[[FileStorage] C:\Users\mark_\AppData\Local\Temp\junit14751028455289523415\test_database.txt not found. Creating default database...
+[FileStorage] Saved 2 flights to C:\Users\mark_\AppData\Local\Temp\junit14751028455289523415\test_database.txt (v1)
 ]]></system-out>
   </testcase>
-  <testcase name="updateSeatWithNonexistentFlightReturnsFalse" classname="airlines.DatabaseServiceTest" time="0.003">
-    <system-out><![CDATA[[FileStorage] C:\Users\mark_\AppData\Local\Temp\junit8318144078826857818\test_database.txt not found. Creating default database...
-[FileStorage] Saved 2 flights to C:\Users\mark_\AppData\Local\Temp\junit8318144078826857818\test_database.txt
+  <testcase name="updateSeatWithNonexistentFlightReturnsFalse" classname="airlines.DatabaseServiceTest" time="0.004">
+    <system-out><![CDATA[[FileStorage] C:\Users\mark_\AppData\Local\Temp\junit4183212984823088993\test_database.txt not found. Creating default database...
+[FileStorage] Saved 2 flights to C:\Users\mark_\AppData\Local\Temp\junit4183212984823088993\test_database.txt (v1)
 ]]></system-out>
   </testcase>
-  <testcase name="updateSeatWithNonexistentSeatReturnsFalse" classname="airlines.DatabaseServiceTest" time="0.003">
-    <system-out><![CDATA[[FileStorage] C:\Users\mark_\AppData\Local\Temp\junit11002736945820516589\test_database.txt not found. Creating default database...
-[FileStorage] Saved 2 flights to C:\Users\mark_\AppData\Local\Temp\junit11002736945820516589\test_database.txt
-[FileStorage] Saved 3 flights to C:\Users\mark_\AppData\Local\Temp\junit11002736945820516589\test_database.txt
+  <testcase name="updateSeatWithNonexistentSeatReturnsFalse" classname="airlines.DatabaseServiceTest" time="0.005">
+    <system-out><![CDATA[[FileStorage] C:\Users\mark_\AppData\Local\Temp\junit3003429689949214640\test_database.txt not found. Creating default database...
+[FileStorage] Saved 2 flights to C:\Users\mark_\AppData\Local\Temp\junit3003429689949214640\test_database.txt (v1)
+[FileStorage] Saved 3 flights to C:\Users\mark_\AppData\Local\Temp\junit3003429689949214640\test_database.txt (v1)
 ]]></system-out>
   </testcase>
   <testcase name="deleteNonexistentFlightReturnsFalse" classname="airlines.DatabaseServiceTest" time="0.003">
-    <system-out><![CDATA[[FileStorage] C:\Users\mark_\AppData\Local\Temp\junit782961693051526121\test_database.txt not found. Creating default database...
-[FileStorage] Saved 2 flights to C:\Users\mark_\AppData\Local\Temp\junit782961693051526121\test_database.txt
+    <system-out><![CDATA[[FileStorage] C:\Users\mark_\AppData\Local\Temp\junit17096936478819153476\test_database.txt not found. Creating default database...
+[FileStorage] Saved 2 flights to C:\Users\mark_\AppData\Local\Temp\junit17096936478819153476\test_database.txt (v1)
 [DatabaseService] deleteFlight: not found NONEXISTENT
 ]]></system-out>
   </testcase>
   <testcase name="constructorWithNullPathUsesDefault" classname="airlines.DatabaseServiceTest" time="0.003">
-    <system-out><![CDATA[[FileStorage] C:\Users\mark_\AppData\Local\Temp\junit12445700582791398674\test_database.txt not found. Creating default database...
-[FileStorage] Saved 2 flights to C:\Users\mark_\AppData\Local\Temp\junit12445700582791398674\test_database.txt
+    <system-out><![CDATA[[FileStorage] C:\Users\mark_\AppData\Local\Temp\junit3471145197037278594\test_database.txt not found. Creating default database...
+[FileStorage] Saved 2 flights to C:\Users\mark_\AppData\Local\Temp\junit3471145197037278594\test_database.txt (v1)
 [FileStorage] Loaded 3 flights from database.txt
 ]]></system-out>
   </testcase>
-  <testcase name="deleteFlightValid" classname="airlines.DatabaseServiceTest" time="0.003">
-    <system-out><![CDATA[[FileStorage] C:\Users\mark_\AppData\Local\Temp\junit18119985049202001033\test_database.txt not found. Creating default database...
-[FileStorage] Saved 2 flights to C:\Users\mark_\AppData\Local\Temp\junit18119985049202001033\test_database.txt
-[FileStorage] Saved 3 flights to C:\Users\mark_\AppData\Local\Temp\junit18119985049202001033\test_database.txt
-[FileStorage] Saved 2 flights to C:\Users\mark_\AppData\Local\Temp\junit18119985049202001033\test_database.txt
+  <testcase name="deleteFlightValid" classname="airlines.DatabaseServiceTest" time="0.004">
+    <system-out><![CDATA[[FileStorage] C:\Users\mark_\AppData\Local\Temp\junit11874289415673472662\test_database.txt not found. Creating default database...
+[FileStorage] Saved 2 flights to C:\Users\mark_\AppData\Local\Temp\junit11874289415673472662\test_database.txt (v1)
+[FileStorage] Saved 3 flights to C:\Users\mark_\AppData\Local\Temp\junit11874289415673472662\test_database.txt (v1)
+[FileStorage] Saved 2 flights to C:\Users\mark_\AppData\Local\Temp\junit11874289415673472662\test_database.txt (v1)
 ]]></system-out>
   </testcase>
-  <testcase name="addFlightWithInvalidParameters" classname="airlines.DatabaseServiceTest" time="0.004">
-    <system-out><![CDATA[[FileStorage] C:\Users\mark_\AppData\Local\Temp\junit13634028038380770043\test_database.txt not found. Creating default database...
-[FileStorage] Saved 2 flights to C:\Users\mark_\AppData\Local\Temp\junit13634028038380770043\test_database.txt
+  <testcase name="addFlightWithInvalidParameters" classname="airlines.DatabaseServiceTest" time="0.005">
+    <system-out><![CDATA[[FileStorage] C:\Users\mark_\AppData\Local\Temp\junit14995544079138326744\test_database.txt not found. Creating default database...
+[FileStorage] Saved 2 flights to C:\Users\mark_\AppData\Local\Temp\junit14995544079138326744\test_database.txt (v1)
 [DatabaseService] addFlight: missing id/number
 [DatabaseService] addFlight: missing id/number
 [DatabaseService] addFlight: missing id/number
@@ -154,22 +154,22 @@
 [DatabaseService] addFlight: no seat letters provided
 [DatabaseService] addFlight: no seat letters provided
 [DatabaseService] addFlight: too many seats requested
-[FileStorage] Saved 3 flights to C:\Users\mark_\AppData\Local\Temp\junit13634028038380770043\test_database.txt
+[FileStorage] Saved 3 flights to C:\Users\mark_\AppData\Local\Temp\junit14995544079138326744\test_database.txt (v1)
 [DatabaseService] addFlight: duplicate flightId T100
 ]]></system-out>
   </testcase>
-  <testcase name="releaseSeatWrapper" classname="airlines.DatabaseServiceTest" time="0.003">
-    <system-out><![CDATA[[FileStorage] C:\Users\mark_\AppData\Local\Temp\junit11842677447126333271\test_database.txt not found. Creating default database...
-[FileStorage] Saved 2 flights to C:\Users\mark_\AppData\Local\Temp\junit11842677447126333271\test_database.txt
-[FileStorage] Saved 3 flights to C:\Users\mark_\AppData\Local\Temp\junit11842677447126333271\test_database.txt
-[FileStorage] Saved 3 flights to C:\Users\mark_\AppData\Local\Temp\junit11842677447126333271\test_database.txt
-[FileStorage] Saved 3 flights to C:\Users\mark_\AppData\Local\Temp\junit11842677447126333271\test_database.txt
+  <testcase name="releaseSeatWrapper" classname="airlines.DatabaseServiceTest" time="0.004">
+    <system-out><![CDATA[[FileStorage] C:\Users\mark_\AppData\Local\Temp\junit9241854526676759151\test_database.txt not found. Creating default database...
+[FileStorage] Saved 2 flights to C:\Users\mark_\AppData\Local\Temp\junit9241854526676759151\test_database.txt (v1)
+[FileStorage] Saved 3 flights to C:\Users\mark_\AppData\Local\Temp\junit9241854526676759151\test_database.txt (v1)
+[FileStorage] Saved 3 flights to C:\Users\mark_\AppData\Local\Temp\junit9241854526676759151\test_database.txt (v1)
+[FileStorage] Saved 3 flights to C:\Users\mark_\AppData\Local\Temp\junit9241854526676759151\test_database.txt (v1)
 ]]></system-out>
   </testcase>
-  <testcase name="addFlightValid" classname="airlines.DatabaseServiceTest" time="0.003">
-    <system-out><![CDATA[[FileStorage] C:\Users\mark_\AppData\Local\Temp\junit11973435275610643232\test_database.txt not found. Creating default database...
-[FileStorage] Saved 2 flights to C:\Users\mark_\AppData\Local\Temp\junit11973435275610643232\test_database.txt
-[FileStorage] Saved 3 flights to C:\Users\mark_\AppData\Local\Temp\junit11973435275610643232\test_database.txt
+  <testcase name="addFlightValid" classname="airlines.DatabaseServiceTest" time="0.004">
+    <system-out><![CDATA[[FileStorage] C:\Users\mark_\AppData\Local\Temp\junit6729585858619811880\test_database.txt not found. Creating default database...
+[FileStorage] Saved 2 flights to C:\Users\mark_\AppData\Local\Temp\junit6729585858619811880\test_database.txt (v1)
+[FileStorage] Saved 3 flights to C:\Users\mark_\AppData\Local\Temp\junit6729585858619811880\test_database.txt (v1)
 ]]></system-out>
   </testcase>
 </testsuite>
